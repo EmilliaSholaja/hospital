@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #9370db;
+  --secondary-color: #4e34b6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+  background-color: lavender!important;
+
+}
+
+/* Center login section */
+#login-container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#section-image {
+    width: 100%!important; /* Ensures full width */
+    max-width: 600px!important; /* Adjust max width if needed */
+    height: 180px!important; /* Control height */
+    object-fit: cover!important; /* Prevents distortion */
+    display: block!important; /* Removes extra spacing */
+    margin: 0 auto 15px!important; /* Centers the image and adds space below */
+    border-radius: 8px!important; /* Optional: Adds rounded corners */
+}
+
+.form-section {
+    display: none;
+
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adds spacing between buttons */
+}
+
+#apply-now {
+  display: none; /* Initially hidden */
+}
+
+h6{
+    font-weight: 600;
+    font-size: 20px!important;
+}
+label{
+  text-align: left!important;
+  font-weight: 400;
+}
+.form-section.active {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+/* Adjust login box */
+.row {
+  max-width: auto;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+}
+
+
+/* Form styling */
+h3, .account{
+  color: var(--secondary-color)!important;
+}
+
+.btn {
+  background: var(--secondary-color)!important;
+  color: #fff !important;
+  border: none;
+}
+
+.btn:hover {
+  background: var(--primary-color)!important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .login-img {
+        max-height: 400px; /* Smaller image on small screens */
+    }
+    h3 {
+        margin-top: 10px!important;
+    }
+
+    .info{
+        font-size: 14px!important;
+    }
+    label{
+        text-align: left!important;
+    }
+}

@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #9370db;
+  --secondary-color: #4e34b6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Ensure content isn't hidden under header */
+body {
+  background-color: lavender!important;
+ /* Adjust based on header height */
+}
+
+/* Center login section */
+.login-container {
+
+  min-height: calc(100vh - 80px);
+}
+
+/* Adjust login box */
+.row {
+  max-width: 750px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+/* Adjust login image */
+.login-img {
+  max-width: 180px; /* Smaller image */
+}
+
+/* Form styling */
+h3, .account{
+  color: var(--secondary-color)!important;
+}
+
+.btn {
+  background: var(--secondary-color)!important;
+  color: #fff !important;
+  border: none;
+}
+
+.btn:hover {
+  background: var(--primary-color)!important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row {
+    text-align: center;
+  }
+
+  .login-img {
+    max-width: 140px;
+    max-height: 400px; /* Smaller image on small screens */
+  }
+  h3 {
+    margin-top: 10px!important;
+  }
+
+  .info{
+    font-size: 14px!important;
+  }
+}
