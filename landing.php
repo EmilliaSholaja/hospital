@@ -13,7 +13,19 @@ session_start();
       rel="stylesheet"
     />
     <link rel="stylesheet"  href="./css/landing.css?v=<?php echo time(); ?>"" />
-    <script defer src="./js/landing.js"></script>
+    <script defer>
+      const slider = document.querySelector(".doctors__grid");
+const leftBtn = document.querySelector(".doctors__nav span:first-child");
+const rightBtn = document.querySelector(".doctors__nav span:last-child");
+
+rightBtn.addEventListener("click", () => {
+  slider.scrollBy({ left: 320, behavior: "smooth" });
+});
+
+leftBtn.addEventListener("click", () => {
+  slider.scrollBy({ left: -320, behavior: "smooth" });
+});
+    </script>
 
     <title>HealthCare Landing Page</title>
 
