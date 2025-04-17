@@ -210,7 +210,7 @@ include("../hospital/include/register.php");
                     </div>
                     </form>
                     <p class="info mt-3 text-center">
-                        Already Have An Account?  <a href="../hospital/doctor-login.php" class="account">Login</a>
+                        Already Have An Account?  <a href="../hospital/patient-login.php" class="account">Login</a>
                     </p>
 
                 </div>
